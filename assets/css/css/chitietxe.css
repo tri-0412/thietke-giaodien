@@ -1,0 +1,247 @@
+/* CSS cho cấu trúc phân cột */
+.info-product{
+    margin-left:150px ;
+}
+.price-detail{
+    background-color: #ff0000;
+    width: 170px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 180px;
+
+}
+.detail-img {
+    width: 500px !important;
+    height: auto !important;
+    margin-left: 30px;
+}
+
+  .info-container{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .info-section {
+    margin-right: 200px;
+    width: 440px;
+    color: #000;
+ 
+    padding-left: 20px;
+  }
+  .info-section ul{
+    list-style: none;
+  }
+  .extra-list {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ebebeb;
+    
+  }
+  .div-uudai{
+    display: block;
+    background: #ed1c24;
+    border-radius: 15px;
+    line-height: 20px;
+    padding: 5px 15px;
+    color: #fff;
+    width: 180px;
+    margin-top: -30px;
+    font-weight: 600;
+  }
+  .extra-list li {
+    margin-bottom: 10px;
+    line-height: 15px;
+  }
+  
+  .color-section {
+    margin-top: 20px;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .color-option {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .color-option.blue { background-color: #0000ff; color: white; }
+  .color-option.red { background-color: #ff0000; color: white; }
+  .color-option.black { background-color: #000; color: white; }
+  .color-option.gray { background-color: #808080; color: white; }
+  .color-option.white { background-color: #f0f0f0; color: black; }
+  
+  .btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .product-name{
+    color: #000;
+    margin-left: 100px;
+  }
+.btn-datcoc{
+  
+  background-color: #ff0000;
+  color: white;
+  display: block;
+  outline: none;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px;
+    height: 50px;
+    width: 215px;
+    box-shadow: 0 15px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  .thongso {
+    color: #000;
+  }
+  .thongso-p{
+    display: block;
+    padding: 20px 15px;
+    line-height: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#f0f0f0 ;
+    background-color: #ff0000;
+    text-align: center;
+  }
+  .table-thongso{
+    margin-bottom: 50px;
+  }
+  .info-card{
+    border: solid 1px #e1e1e1;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .info-card-ul{
+    padding: 15px;
+    padding-bottom: 10px;
+    line-height: 1.6;
+    
+    
+  }
+  .extra-list{
+    
+    /* background-color: #ebebeb; */
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 15px;
+    font-size: 13px;
+    margin: 0px;
+  }
+
+
+
+  #datCocModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 320px; /* Chiều rộng của modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#datCocModal h1.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    /* text-align: center; */
+}
+
+#datCocForm label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+#datCocForm input, 
+#datCocForm select, 
+#datCocForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#datCocForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#datCocForm button:hover {
+    background-color: #cc0000;
+}
+/* Overlay để bao phủ toàn màn hình */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal */
+#datCocModal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,150 @@
+.menu {
+  text-decoration: none;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Icon-btn {
+  display: none;
+  font-size: 21px;
+}
+
+.menuH {
+  display: flex;
+  height: 68px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background: #e0e0e0;
+}
+
+.menu_h:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -7px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.21s ease-out;
+  height: 1px;
+  background: #000;
+}
+
+.menu_h::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -7px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.21s ease-out;
+  height: 1px;
+  background: #000;
+}
+
+.menu_h:hover::before {
+  transform: scaleX(1);
+}
+
+.menu_h:hover::after {
+  transform: scaleX(1);
+}
+
+.menu_h {
+  cursor: pointer;
+  padding: 8px 12px 8px 12px;
+  margin: 0px 5px 0px 5px;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.menuV {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  top: 1px;
+  display: none;
+}
+
+@media (max-width:768px),(max-width:300px) {
+  .Icon-btn {
+    position: absolute;
+    display: block;
+    left: 44%;
+    right: 44%;
+    text-align: center;
+    padding: 12px 12px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:768px),(max-width:300px) {
+  .menu_h {
+    display: none;
+  }
+}
+
+@media (max-width:768px),(max-width:300px) {
+  .menuV.open {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    transition: transform 0.17s ease-out;
+    justify-content: center;
+    align-items: center;
+    background: #7d7c7c;
+  }
+}
+
+.menu_v {
+  color: #2f2c27;
+  font-weight: 600;
+  padding: 12px 12px;
+}
+
+.menu_v:hover {
+  color: #c8c5c0;
+}
+
+.menu_v:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -7px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.21s ease-out;
+  height: 2px;
+  background: #b09e9e;
+}
+
+.menu_v::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -7px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.21s ease-out;
+  height: 2px;
+  background: #b09e9e;
+}
+
+.menu_v:hover::before {
+  transform: scaleX(1);
+}
+
+.menu_v:hover::after {
+  transform: scaleX(1);
+}
+

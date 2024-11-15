@@ -1,0 +1,99 @@
+img {
+  height: 100px;
+  width: 130px;
+}
+
+section {
+  /*align-items: center;*/
+  /*display: block;*/
+  /*flex-wrap: wrap-reverse;*/
+}
+
+/* Sử dụng tên class đặc trưng để hạn chế ảnh hưởng */
+
+.motorbike-section .all {
+  padding: 20px;
+  text-align: center;
+}
+
+.motorbike-section .slider-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.motorbike-section .slider-item {
+  list-style: none;
+  margin: 15px;
+}
+
+.motorbike-section .card-recondi {
+  width: 250px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.motorbike-section .card-recondi-top img {
+  width: 100%;
+  height: auto;
+}
+
+.motorbike-section .visible-info {
+  padding: 10px;
+}
+
+.motorbike-section .name-item {
+  font-weight: bold;
+  color: #191c20;
+  background-color: #fdfbff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.motorbike-section .price-item {
+  color: #140000;
+  margin-bottom: 10px;
+}
+
+.motorbike-section .price-item span {
+  color: #e04251;
+}
+
+/* Red Button Styling */
+
+.motorbike-section .box-primary-hl {
+  text-align: center;
+}
+
+.motorbike-section .text-bg-danger {
+  display: inline-block;
+  background-color: #e04251;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.motorbike-section .text-bg-danger:hover {
+  background-color: #bf3240;
+}
+
+.motorbike-section .text-card {
+  font-size: 14px;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+  .motorbike-section .card-recondi {
+    width: 100%;
+  }
+}
+
